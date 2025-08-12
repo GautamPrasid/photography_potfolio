@@ -57,8 +57,3 @@ ScrollReveal().reveal(".about__btn", {
   ...scrollRevealOption,
   delay: 2000,
 });
-
-
-ScrollReveal().reveal(".contact__image img", {
-  ...scrollRevealOption,
-});
