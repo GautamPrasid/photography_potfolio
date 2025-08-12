@@ -1,4 +1,61 @@
+// Sample gallery data
+const samplePhotos = [
+    {
+        id: 1,
+        url: 'assets/portfolio-1.png',
+        category: 'nature',
+        description: 'Beautiful mountain landscape',
+        title: 'Mountain View'
+    },
+    {
+        id: 2,
+        url: 'assets/portfolio-2.png',
+        category: 'urban',
+        description: 'Urban architecture',
+        title: 'City View'
+    },
+    {
+        id: 3,
+        url: 'assets/portfolio-3.png',
+        category: 'portrait',
+        description: 'Portrait photography',
+        title: 'Portrait'
+    },
+    {
+        id: 4,
+        url: 'assets/portfolio-4.png',
+        category: 'travel',
+        description: 'Travel photography',
+        title: 'Travel'
+    },
+    {
+        id: 5,
+        url: 'assets/portfolio-5.png',
+        category: 'nature',
+        description: 'Nature photography',
+        title: 'Nature'
+    },
+    {
+        id: 6,
+        url: 'assets/portfolio-6.png',
+        category: 'blackwhite',
+        description: 'Black and white photography',
+        title: 'Monochrome'
+    },
+    {
+        id: 7,
+        url: 'assets/portfolio-7.png',
+        category: 'urban',
+        description: 'Urban life',
+        title: 'Street'
+    }
+];
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Use sample photos
+    window.allPhotos = samplePhotos;
+    
+   
     // Mobile menu toggle
     const menuBtn = document.querySelector('.nav__menu__btn');
     const navLinks = document.querySelector('.nav__links');
@@ -39,47 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let currentFilter = 'all';
     let photosLoaded = 0;
-    const photosPerLoad = 15;
-    const totalPhotos = 1000; // Simulating 1000 photos
+    const photosPerLoad = 6;  // Show 6 photos per load
     
-    // Sample photo data with categories
-    const photoCategories = ['nature', 'portrait', 'urban', 'travel', 'blackwhite'];
-    const photoDescriptions = [
-        "Sunrise over mountain peaks",
-        "Urban architecture symmetry",
-        "Studio portrait with dramatic lighting",
-        "Wedding ceremony emotional moment",
-        "Wildlife in natural environment",
-        "Street photography candid shot",
-        "Family portrait at golden hour",
-        "Music festival performance",
-        "Macro photography of dewdrops",
-        "Black and white cityscape",
-        "Aerial view of coastline",
-        "Cultural festival celebrations",
-        "Abstract architectural details",
-        "Portrait with natural light",
-        "Landscape with dramatic clouds"
-    ];
-    
-    // Generate photo data
-    function generatePhotoData(count) {
-        const photos = [];
-        for (let i = 1; i <= count; i++) {
-            const category = photoCategories[Math.floor(Math.random() * photoCategories.length)];
-            const description = photoDescriptions[Math.floor(Math.random() * photoDescriptions.length)];
-            photos.push({
-                id: i,
-                url: `https://source.unsplash.com/random/800x600/?photography,${category},${i}`,
-                category: category,
-                description: description,
-                title: `Photo ${i}`
-            });
-        }
-        return photos;
-    }
-    
-    const allPhotos = generatePhotoData(totalPhotos);
+    // Filter photos by category
     
     // Filter photos by category
     function filterPhotos(category) {
