@@ -1,61 +1,57 @@
-// Sample gallery data
-const samplePhotos = [
-    {
-        id: 1,
-        url: 'assets/portfolio-1.png',
-        category: 'nature',
-        description: 'Beautiful mountain landscape',
-        title: 'Mountain View'
-    },
-    {
-        id: 2,
-        url: 'assets/portfolio-2.png',
-        category: 'urban',
-        description: 'Urban architecture',
-        title: 'City View'
-    },
-    {
-        id: 3,
-        url: 'assets/portfolio-3.png',
-        category: 'portrait',
-        description: 'Portrait photography',
-        title: 'Portrait'
-    },
-    {
-        id: 4,
-        url: 'assets/portfolio-4.png',
-        category: 'travel',
-        description: 'Travel photography',
-        title: 'Travel'
-    },
-    {
-        id: 5,
-        url: 'assets/portfolio-5.png',
-        category: 'nature',
-        description: 'Nature photography',
-        title: 'Nature'
-    },
-    {
-        id: 6,
-        url: 'assets/portfolio-6.png',
-        category: 'blackwhite',
-        description: 'Black and white photography',
-        title: 'Monochrome'
-    },
-    {
-        id: 7,
-        url: 'assets/portfolio-7.png',
-        category: 'urban',
-        description: 'Urban life',
-        title: 'Street'
-    }
-];
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Use sample photos
-    window.allPhotos = samplePhotos;
-    
-   
+    // Your photo gallery data
+    const allPhotos = [
+        {
+            id: 1,
+            url: 'assets/portfolio-1.png',
+            category: 'nature',
+            description: 'Beautiful mountain landscape',
+            title: 'Mountain View'
+        },
+        {
+            id: 2,
+            url: 'assets/portfolio-2.png',
+            category: 'urban',
+            description: 'Urban architecture',
+            title: 'City View'
+        },
+        {
+            id: 3,
+            url: 'assets/portfolio-3.png',
+            category: 'portrait',
+            description: 'Portrait photography',
+            title: 'Portrait'
+        },
+        {
+            id: 4,
+            url: 'assets/portfolio-4.png',
+            category: 'travel',
+            description: 'Travel photography',
+            title: 'Travel'
+        },
+        {
+            id: 5,
+            url: 'assets/portfolio-5.png',
+            category: 'nature',
+            description: 'Nature photography',
+            title: 'Nature'
+        },
+        {
+            id: 6,
+            url: 'assets/portfolio-6.png',
+            category: 'blackwhite',
+            description: 'Black and white photography',
+            title: 'Monochrome'
+        },
+        {
+            id: 7,
+            url: 'assets/portfolio-7.png',
+            category: 'urban',
+            description: 'Urban life',
+            title: 'Street'
+        }
+    ];
+
     // Mobile menu toggle
     const menuBtn = document.querySelector('.nav__menu__btn');
     const navLinks = document.querySelector('.nav__links');
