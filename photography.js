@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 6,
-            url: 'assets/portfolio-6.png',
+            url: 'assets/portfolio-6.jpg',
+
             category: 'blackwhite',
             description: 'Black and white photography',
             title: 'Monochrome'
@@ -49,6 +50,41 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'urban',
             description: 'Urban life',
             title: 'Street'
+        },
+        {
+            id: 8,
+            url: 'assets/portfolio-8.jpg',
+            category: 'nature',
+            description: 'Natural landscape',
+            title: 'Landscape View'
+        },
+        {
+            id: 9,
+            url: 'assets/portfolio-9.jpg',
+            category: 'travel',
+            description: 'Travel scene',
+            title: 'Journey'
+        },
+        {
+            id: 10,
+            url: 'assets/portfolio-10.jpg',
+            category: 'portrait',
+            description: 'Portrait study',
+            title: 'Portrait Art'
+        },
+        {
+            id: 11,
+            url: 'assets/portfolio-11.jpg',
+            category: 'blackwhite',
+            description: 'Monochrome photography',
+            title: 'Black & White'
+        },
+        {
+            id: 12,
+            url: 'assets/portfolio-12.jpg',
+            category: 'urban',
+            description: 'City architecture',
+            title: 'Urban Landscape'
         }
     ];
 
