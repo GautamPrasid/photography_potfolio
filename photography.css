@@ -319,6 +319,11 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  list-style: none;
+}
+
+.footer__socials li {
+  list-style: none;
 }
 
 .footer__socials a {
@@ -400,6 +405,7 @@ nav {
 
 /* Responsive Design */
 
+/* Enhanced Mobile Responsiveness */
 @media (max-width: 768px) {
   .nav__menu__btn {
     display: block;
@@ -427,22 +433,72 @@ nav {
     display: flex;
   }
 
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  .portfolio-container {
+    padding: 80px 1rem 2rem 1rem;
   }
 
   .portfolio-header h1 {
     font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .portfolio-header p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-options {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .load-more-container {
+    margin-top: 2rem;
+  }
+
+  .load-more-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer__socials {
+    justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
-  .gallery {
-    grid-template-columns: 1fr;
+  .portfolio-container {
+    padding: 70px 0.8rem 1.5rem 0.8rem;
+  }
+
+  .portfolio-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-header p {
+    font-size: 0.9rem;
   }
 
   .filter-options {
     gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .filter-btn {
@@ -450,8 +506,42 @@ nav {
     font-size: 0.9rem;
   }
 
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .load-more-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
   .modal-content {
     max-width: 95%;
     max-height: 70%;
+  }
+
+  .close-modal {
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+  }
+
+  .modal-caption {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
+  .section__container {
+    padding: 2rem 1rem;
+  }
+
+  .section__header {
+    font-size: 1.8rem;
+  }
+
+  .footer__socials a {
+    padding: 3px 7px;
+    font-size: 1.1rem;
   }
 }

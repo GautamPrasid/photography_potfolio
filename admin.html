@@ -49,6 +49,47 @@
         .hidden {
             display: none;
         }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .admin-container {
+                margin: 80px auto;
+                padding: 1rem;
+            }
+            
+            .login-form, .upload-form {
+                padding: 1.5rem;
+            }
+            
+            .photo-preview {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 0.8rem;
+            }
+            
+            .photo-preview img {
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .admin-container {
+                margin: 60px auto;
+                padding: 0.8rem;
+            }
+            
+            .login-form, .upload-form {
+                padding: 1rem;
+            }
+            
+            .photo-preview {
+                grid-template-columns: 1fr;
+                gap: 0.6rem;
+            }
+            
+            .photo-preview img {
+                height: 100px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -61,7 +102,7 @@
             </div>
         </div>
         <ul class="nav__links">
-            <li><a href="index.html">Back to Site</a></li>
+            <li><a href="home.html">Back to Site</a></li>
         </ul>
     </nav>
 
